@@ -189,3 +189,15 @@ img {
     height: 15rem;
     border-radius: 50%;
 }
+
+.login{
+    background-image: url(/src/img/fondologin.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14.4rem;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
