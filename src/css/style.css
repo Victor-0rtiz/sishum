@@ -104,6 +104,7 @@ img {
   color: white;
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
+  gap: 1rem;
 }
 .info__mision h2,
 .info__vision h2 {
@@ -118,6 +119,7 @@ img {
     padding: 4rem;
     color: #153742;
     text-align: center;
+    gap: 2rem;
     
     font-weight: 700;
 }
@@ -132,6 +134,58 @@ img {
 
 .estadisticas{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    background-color: #153742;
+    color: white;
+    text-align: center;
+}
+
+.estadisticas__div--numero{
+    color: #d6490c;
+    font-size: 5rem;
+
+}
+.autoridades{
+
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
+    flex-direction: column;
+    gap: 2rem;
+    color: #153742;
+}
+.autoridades__header{
+    border-bottom: 4px solid #d6490c;
+}
+.autoridades__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+.autoridades__div--contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+   
+}
+.autoridades__div--contenedor p{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.autoridades__div--titulo{
+    
+}
+.autoridades__div--contenedor img{
+    width: 16rem;
+    height: 15rem;
+    border-radius: 50%;
 }
