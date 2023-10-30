@@ -221,7 +221,7 @@ img {
 }
 .login__div--img {
   width: 15rem;
-  height: 16rem;
+  height: 18rem;
 }
 .login__formulario {
   display: flex;
@@ -245,6 +245,8 @@ img {
   display: flex;
   gap: 1rem;
   align-items: start;
+  justify-content:space-between;
+  width: 20rem;
 }
 
 .form-input {
@@ -399,4 +401,29 @@ img {
 }
 
 
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.lateral {
+  height: 100vh;
+  width: 11rem; 
+  color: white;
+ 
+  background-color: #153742; 
+}
+.lateral__nav a{
+  text-decoration: none;
+  color: white;
+}
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 50px; 
+  width: 100%;
+  background-color: #153742; 
+}
 
