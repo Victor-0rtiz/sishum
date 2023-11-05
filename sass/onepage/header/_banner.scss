@@ -1,0 +1,32 @@
+.banner {
+    background-image: url('/src/img/fondosishunm.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+  
+    &__div {
+      background-color: $azuloscuro;
+      width: 44rem;
+      height: 25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      gap: 2rem;
+  
+      &--header {
+        color: white;
+        text-align: center;
+      }
+  
+      &--img {
+        width: 12rem;
+        height: 14rem;
+      }
+    }
+  }
+  

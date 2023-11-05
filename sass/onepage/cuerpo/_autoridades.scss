@@ -1,0 +1,44 @@
+.autoridades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    flex-direction: column;
+    gap: 2rem;
+    color: $azuloscuro;
+  
+    &__header {
+      border-bottom: 4px solid $naranja;
+    }
+  
+    &__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+  
+      &--contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+  
+        p {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+  
+      &--titulo {
+      }
+  
+      &--contenedor img {
+        width: 16rem;
+        height: 15rem;
+        border-radius: 50%;
+      }
+    }
+  }
+  

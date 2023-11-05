@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    color: $azuloscuro;
+    text-align: center;
+    gap: 2rem;
+    font-weight: 700;
+  
+    &__div {
+      width: 40rem;
+    }
+  
+    &__header {
+      border-bottom: 4px solid $naranja;
+    }
+  
+    &__parrafo {
+      font-family: "Space Grotesk", sans-serif;
+    }
+  }
+  

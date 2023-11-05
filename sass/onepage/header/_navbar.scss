@@ -1,0 +1,44 @@
+
+
+.navegacion {
+    background-color: $azuloscuro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  
+    a {
+      color: $blanco;
+      text-decoration: none;
+      font-size: 1.3rem;
+  
+      &:hover {
+        color: $naranja;
+      }
+    }
+  
+    &__div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+  
+      &--url {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+  
+        a {
+          color: $blanco;
+          text-decoration: none;
+          font-size: 1.3rem;
+  
+          &:hover {
+            color: $naranja;
+            text-decoration: none;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  

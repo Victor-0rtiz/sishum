@@ -1,0 +1,65 @@
+.footer {
+    background-color: #153742;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+  
+    &__div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    &__contacto,
+    &__sociales {
+      width: 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  
+    &__header {
+      text-align: center;
+      border-bottom: 4px solid $naranja;
+    }
+  
+    &__contacto--info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 2rem;
+      
+      img {
+        width: 12rem;
+        height: 16rem;
+      }
+    }
+  
+    &__contacto--logos {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+  
+    &__sociales--info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+    }
+  }
+  

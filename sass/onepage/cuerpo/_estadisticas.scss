@@ -1,0 +1,15 @@
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    background-color: $azuloscuro;
+    color: white;
+    text-align: center;
+  
+    &__div--numero {
+      color: $naranja;
+      font-size: 5rem;
+    }
+  }
+  

@@ -1,0 +1,37 @@
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    background-color: $azuloscuro;
+    color: $blanco;
+  
+    &__div {
+      width: 40rem;
+      height: 25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__header {
+      border-bottom: 4px solid $naranja;
+      font-weight: 200;
+    }
+  
+    &__imagenes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+  
+      img {
+        width: 10rem;
+        height: 12rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  

@@ -1,0 +1,28 @@
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  
+    &__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40rem;
+      height: 25rem;
+      flex-direction: column;
+      gap: 1rem;
+      
+      &__header {
+        border-bottom: 4px solid #d6490c;
+      }
+    }
+  
+    &__mapa {
+      background-color: #2c2c2c;
+      height: 20rem;
+      width: 30rem;
+      border-radius: 0.5rem;
+    }
+  }
+  

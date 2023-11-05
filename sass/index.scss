@@ -1,0 +1,25 @@
+@import "utilidades/normalizer";
+@import "utilidades/variables";
+@import "onepage/index";
+@font-face {
+    font-family: "Genera Grotesk";
+    src: url("/src/fonts/Genera\ Grotesk\ Heavy.ttf") format("truetype");
+  
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Genera Grotesk", sans-serif;
+    font-weight: 100;
+  }
+  
+  img {
+    width: 3rem;
+    height: 4rem;
+  }
+  
