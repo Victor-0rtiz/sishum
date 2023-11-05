@@ -3,7 +3,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem;
+ 
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,13 +68,13 @@
       .btn {
         padding: 0.5rem;
         width: 9rem;
-        background-color: #0da08f;
+        background-color: $cyan;
         color: white;
-        border: 1px solid #000;
+        border: 1px solid $negro;
         border-radius: 0.5rem;
  
         &:hover {
-          background-color: #12423d;
+          background-color: $cyan2;
           cursor: pointer;
         }
       }

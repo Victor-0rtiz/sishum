@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISHUM</title>
     <link rel="stylesheet" href="/src/css/normalizer.css" />
-    <link rel="stylesheet" href="/public/css/index.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,32 +15,33 @@
 </head>
 <body>
     <div class="wrapper">
+        <aside class="lateral">
+            <h1 class="lateral__title">Sistema Humberto Pavon Fonseca</h1>
+            <img class="lateral__image" src="src/img/userwoman.png" alt="Imagen de usuario">
+            <p class="lateral__role">Rol: Administrador</p>
+            <nav class="lateral__nav">
+                
+                <a class="" href="sistema.html">Inicio</a>
+                <a class="" href="/sistema/perfil.html">Perfil</a>
+                <a class="" href="/sistema/matriculas.html">Matrículas</a>
+                <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+                <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+                <a class="" href="/sistema/docentes.html">Docentes</a>
+                
+            </nav>
+        </aside>
         <div class="contenido">
             <header class="header">
-                <div class="header__user-info">
-                    <p class="header__user">Usuario: Nombre de Usuario</p>
-                    <a class="header__logout" href="#">Cerrar Sesión</a>
-                </div>
+            
+                    
+                    <a class="header__user" href="/sistema/perfil.html"> Juana Pereira Lopez</a>
+                    <a class="header__logout" href="/">Cerrar Sesión</a>
+                
             </header>
             <main class="main-content">
                 <!-- Contenido principal del sistema -->
             </main>
         </div>
-        <aside class="lateral">
-            <h1 class="lateral__title">Sistema Humberto</h1>
-            <img class="lateral__image" src="tu-imagen.jpg" alt="Imagen de usuario">
-            <p class="lateral__role">Rol: Administrador</p>
-            <nav class="lateral__nav">
-                
-                    <a class="" href="#">Inicio</a>
-                    <a class="" href="#">Perfil</a>
-                    <a class="" href="#">Matrículas</a>
-                    <a class="" href="#">Calificaciones</a>
-                    <a class "" href="#">Asignaturas</a>
-                    <a class="" href="#">Docentes</a>
-                
-            </nav>
-        </aside>
     </div>
 </body>
 </html>
