@@ -1,82 +1,102 @@
 .login {
-    background-image: url('/src/img/fondologin.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    &__header {
+  background-image: url("/src/img/fondologin.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  &__header {
+  }
+ 
+  &__div {
+    font-family: "Space Grotesk", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 1rem;
+    padding: 4rem;
+    color: white;
+    background-color: rgba(21, 55, 66, 0.8);
+    gap: 3rem;
+ 
+    &--img {
+      width: 15rem;
+      height: 18rem;
     }
-  
-    &__div {
-      font-family: "Space Grotesk", sans-serif;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      border-radius: 1rem;
-      padding: 4rem;
-      color: white;
-      background-color: rgba(21, 55, 66, 0.8);
+ 
+    .login__formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
       gap: 3rem;
-  
-      &--img {
-        width: 15rem;
-        height: 18rem;
+    }
+ 
+    .login__div--contenedor {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+ 
+      a {
+        text-decoration: none;
+        color: white;
       }
-  
-      .login__formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        gap: 3rem;
-      }
-  
-      .login__div--contenedor {
+ 
+      .login__formulario--grupo {
         display: flex;
         gap: 1rem;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-  
-        a {
-          text-decoration: none;
-          color: white;
-        }
-  
-        .login__formulario--grupo {
-          display: flex;
-          gap: 1rem;
-          align-items: start;
-          justify-content: space-between;
-          width: 20rem;
-        }
-  
-        .form-input {
-          border: none;
-          border-bottom: 0.2rem solid #2c2c2c;
-          outline: none;
-          padding: 5px;
-          color: white;
-          background-color: rgba(49, 51, 51, 0.062);
-        }
-  
-        .btn {
-          padding: 0.5rem;
-          width: 9rem;
-          background-color: #0da08f;
-          color: white;
-          border: 1px solid #000;
-          border-radius: 0.5rem;
-  
-          &:hover {
-            background-color: #12423d;
-            cursor: pointer;
-          }
+        align-items: start;
+        justify-content: space-between;
+        width: 20rem;
+      }
+ 
+      .form-input {
+        border: none;
+        border-bottom: 0.2rem solid #2c2c2c;
+        outline: none;
+        padding: 5px;
+        color: white;
+        background-color: rgba(49, 51, 51, 0.062);
+        
+      }
+ 
+      .btn {
+        padding: 0.5rem;
+        width: 9rem;
+        background-color: #0da08f;
+        color: white;
+        border: 1px solid #000;
+        border-radius: 0.5rem;
+ 
+        &:hover {
+          background-color: #12423d;
+          cursor: pointer;
         }
       }
+ 
+      .input-icon {
+        position: relative;
+      }
+ 
+      .input-icon i {
+        
+        position: absolute;
+        left: -1.1rem;
+        top: 0.1875rem;
+      }
+ 
+      
     }
   }
-  
+ }
+ 
+
+
+
+
+
+ 

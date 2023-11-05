@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login-SISHUM</title>
-    <link rel="stylesheet" href="/src/css/normalizer.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+ 
+    <link rel="stylesheet" href="public/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/2624ac34cc.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="login">
@@ -23,28 +24,35 @@
         </div>
         <div class="login__div--contenedor">
           <h2 class="login__div--header">Ingresar</h2>
-          <form action="sistema.html" class="login__formulario">
+          <form action="sistema.html"  class="login__formulario">
             <div class="login__formulario--grupo">
               <label for="email">Correo Electronico</label>
-              <input
-                class="form-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ingresa tu email aqui"
-              />
-            </div>
-            <div class="login__formulario--grupo">
+              <div class="input-icon">
+                <input
+                  class="form-input email-icon"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ingresa tu email aqui" 
+                />
+                <i class="fas fa-envelope"></i>
+              </div>
+             </div>
+             <div class="login__formulario--grupo">
               <label for="password">Contraseña</label>
-              <input
-                class="form-input"
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Ingresa tu contraseña aqui"
-              />
-            </div>
-            <input class="btn" type="submit" value="Ingresar" />
+              <div class="input-icon">
+                <input
+                  class="form-input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Ingresa tu contraseña aqui "
+                />
+                <i class="fas fa-lock"></i>
+              </div>
+             </div>
+             <button class="btn" type="submit">Ingresar  <span>  <i class="fa-solid fa-right-to-bracket" > </i></span> </i></button>
+            
           </form>
           <a href="">¿Olvidaste tu contraseña?</a>
         </div>
