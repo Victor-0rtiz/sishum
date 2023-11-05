@@ -5,17 +5,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 .3rem;
   
     a {
       color: $blanco;
       text-decoration: none;
       font-size: 1.3rem;
-  
-      &:hover {
-        color: $naranja;
+      padding: .4rem;
+      position: relative;
+      overflow: hidden;
+      &:hover{
+    
+        border-radius: .5rem;
+      }
+     
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $naranja;
+        transition: all 0.2s ease-in-out;
+      }
+     
+      &:hover:after {
+        width: 100%;
+       
       }
     }
+
+
+    // a {
+    //   color: $blanco;
+    //   text-decoration: none;
+    //   font-size: 1.3rem;
+    //   transition: box-shadow 0.3s ease-in-out; // Añade una transición al box-shadow
+     
+    //   &:hover {
+    //     color: $blanco;
+    //     box-shadow: inset 0 5px $naranja; // Ajusta el valor del segundo parámetro para mover el subrayado hacia abajo
+    //   }
+    //   }
   
     &__div {
       display: flex;
@@ -33,7 +65,7 @@
           font-size: 1.3rem;
   
           &:hover {
-            color: $naranja;
+            color: $blanco;
             text-decoration: none;
             font-size: 1.3rem;
           }
