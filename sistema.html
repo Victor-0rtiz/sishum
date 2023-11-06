@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SISHUM</title>
     <link rel="stylesheet" href="/src/css/normalizer.css" />
     <link rel="stylesheet" href="/src/css/index.css" />
@@ -12,36 +12,110 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2624ac34cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
     <div class="wrapper">
-        <aside class="lateral">
-            <h1 class="lateral__title">Sistema Humberto Pavon Fonseca</h1>
-            <img class="lateral__image" src="src/img/userwoman.png" alt="Imagen de usuario">
-            <p class="lateral__role">Rol: Administrador</p>
-            <nav class="lateral__nav">
-                
-                <a class="" href="sistema.html">Inicio</a>
-                <a class="" href="/sistema/perfil.html">Perfil</a>
-                <a class="" href="/sistema/matriculas.html">Matrículas</a>
-                <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
-                <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
-                <a class="" href="/sistema/docentes.html">Docentes</a>
-                
-            </nav>
-        </aside>
-        <div class="contenido">
-            <header class="header">
-            
+      <aside class="lateral">
+        <h1 class="lateral__title">Sistema Humberto Pavon Fonseca</h1>
+        <img
+          class="lateral__image"
+          src="src/img/userwoman.png"
+          alt="Imagen de usuario"
+        />
+        <p class="lateral__role">Rol: Administrador</p>
+        <nav class="lateral__nav">
+          <a class="" href="sistema.html">Inicio</a>
+          <a class="" href="/sistema/perfil.html">Perfil</a>
+          <a class="" href="/sistema/matriculas.html">Matrículas</a>
+          <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+          <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+          <a class="" href="/sistema/docentes.html">Docentes</a>
+        </nav>
+      </aside>
+      <div class="contenido">
+        <header class="header">
+          <a class="header__user" href="/sistema/perfil.html">
+            Juana Pereira Lopez</a
+          >
+          <a class="header__logout" href="/">Cerrar Sesión</a>
+        </header>
+        <main class="content">
+          <!-- Contenido principal del sistema -->
+
+          <div class="estadist">
+            <div class="estadist__estudiantes">
+              <h2>Estudiantes</h2>
+              <div class="estadist__datos" data-aos="flip-left">
+                <span> 30 </span>
+                <i class="fa-solid fa-children"></i>
+              </div>
+            </div>
+            <div class="estadist__docentes">
+              <h2>Docentes</h2>
+              <div class="estadist__datos" data-aos="flip-right">
+                <span> 30 </span>
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="grafica">
+            <canvas id="multiAxisBarChart"></canvas>
+          </div>
+
+          <div class="tabmatricula">
+            <h2>Últimas Matrículas</h2>
+            <div>
+                <input type="text" placeholder="Buscar">
+                <button>Agregar Matrícula</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Estudiante</th>
+                        <th>Tutor</th>
+                        <th>Grado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juana Pérez</td>
+                        <td>Luis Martínez</td>
+                        <td>10º Grado</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carlos Rodríguez</td>
+                        <td>Maria Sánchez</td>
+                        <td>11º Grado</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Borrar</button>
+                        </td>
+                    </tr>
                     
-                    <a class="header__user" href="/sistema/perfil.html"> Juana Pereira Lopez</a>
-                    <a class="header__logout" href="/">Cerrar Sesión</a>
-                
-            </header>
-            <main class="main-content">
-                <!-- Contenido principal del sistema -->
-            </main>
+                </tbody>
+            </table>
         </div>
+        </main>
+      </div>
     </div>
-</body>
+
+    <script src="/src/js/aos.js"></script>
+    <script src="/src/js/estadisticas.js"></script>
+  </body>
 </html>

@@ -1,30 +1,165 @@
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
-}
 
-.lateral {
-  height: 100vh;
-  width: 11rem;
-  color: white;
-  background-color: #153742;
+  .lateral {
+    position: fixed; /* Fija el aside en su lugar */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 12rem;
+    color: white;
+    background-color: $azuloscuro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 
-  &__nav {
-    a {
+    &__title {
+      text-align: center;
+      font-size: 1.2rem;
+      @include laptop {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        padding: 0.5rem;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 4px;
+          bottom: 0;
+          left: 0;
+          background-color: $naranja;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+
+    &__image {
+      width: 7rem;
+      height: 7rem;
+      @include laptop {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+
+  .contenido {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    & .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 3rem;
+      overflow: auto;
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 12rem; /* Ancho del aside */
+    right: 0;
+    max-width: calc(100% - 12rem); /* Limita el ancho al ancho restante */
+    white-space: nowrap; /* Evita que los elementos dentro del header se rompan */
+    overflow: hidden;
+    height: 3.5rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    background-color: $azuloscuro;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    &__user,
+    &__logout {
+      color: $blanco;
       text-decoration: none;
-      color: white;
+      position: relative;
+      overflow: hidden;
+      padding: 0.5rem 0;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $naranja;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
     }
   }
 }
 
-.contenido {
-  flex-grow: 1;
+
+.estadist{
   display: flex;
-  flex-direction: column;
+  gap: 3rem;
+  &__estudiantes{
+    padding: 1rem 4rem;
+    background-color: rgb(30, 47, 77);
+    color: $blanco;
+    border-radius: .5rem;
+    
+  }
+  &__datos{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    gap: 2rem;
+    span{
+      color: $naranja;
+    }
+   i{
+    font-size: 2rem;
+   }
+  }
+  &__docentes{
+    padding:1rem  3rem;
+    background-color: rgb(28, 6, 110);
+    color: $blanco;
+    border-radius: .5rem;
+  }
+
 }
 
-.header {
-  height: 50px;
-  width: 100%;
-  background-color: #153742;
+.grafica{
+ width: 35rem;
 }
