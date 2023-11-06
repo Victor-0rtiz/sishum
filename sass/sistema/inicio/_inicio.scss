@@ -70,13 +70,12 @@
     flex-direction: column;
     margin-left: 12rem;
     & .content {
-
+      
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding: 3rem;
-      overflow: auto;
       gap: 2rem;
       margin-top: 3.5rem;
     }
@@ -84,7 +83,7 @@
 
   .header {
     position: fixed;
-   
+    z-index: 2;
     max-width: calc(100% - 12rem); 
     
     height: 3.5rem;
@@ -120,6 +119,11 @@
 
       &:hover:after {
         width: 100%;
+      }
+      &:hover{
+        i{
+          color: rgb(230, 65, 65);
+        }
       }
     }
   }
@@ -161,4 +165,73 @@
 
 .grafica{
  width: 35rem;
+}
+// Estilos para el bloque de la tabla
+.tabmatricula {
+  &__titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__entrada {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    &__agregar {
+      padding: 10px 20px;
+      background-color: #0074b8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+
+    &__encabezado {
+      background-color: #0074b8;
+      color: white;
+
+      &__celda {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+
+    &__fila {
+      &--impar {
+        background-color: #f9f9f9;
+      }
+
+      &--par {
+        background-color: #fff;
+      }
+
+      &__celda {
+        padding: 10px;
+
+        &__boton {
+          padding: 5px 10px;
+          background-color: #333;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }

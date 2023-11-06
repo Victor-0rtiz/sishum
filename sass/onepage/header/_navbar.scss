@@ -15,8 +15,9 @@
       position: relative;
       overflow: hidden;
       &:hover{
-    
-        border-radius: .5rem;
+        i{
+          color: rgb(230, 65, 65);
+        }
       }
      
       &:after {
