@@ -1,10 +1,10 @@
 .wrapper {
   display: flex;
+ 
 
   .lateral {
-    position: fixed; /* Fija el aside en su lugar */
-    top: 0;
-    left: 0;
+    position: fixed; 
+    
     height: 100vh;
     width: 12rem;
     color: white;
@@ -68,7 +68,9 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    margin-left: 12rem;
     & .content {
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -82,14 +84,11 @@
 
   .header {
     position: fixed;
-    top: 0;
-    left: 12rem; /* Ancho del aside */
-    right: 0;
-    max-width: calc(100% - 12rem); /* Limita el ancho al ancho restante */
-    white-space: nowrap; /* Evita que los elementos dentro del header se rompan */
-    overflow: hidden;
+   
+    max-width: calc(100% - 12rem); 
+    
     height: 3.5rem;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
     width: 100%;
     background-color: $azuloscuro;
     display: flex;
