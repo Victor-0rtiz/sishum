@@ -1,10 +1,9 @@
 .wrapper {
   display: flex;
- 
 
   .lateral {
-    position: fixed; 
-    
+    position: fixed;
+
     height: 100vh;
     width: 12rem;
     color: white;
@@ -18,7 +17,7 @@
 
     &__title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       @include laptop {
         font-size: 1.4rem;
       }
@@ -27,7 +26,8 @@
     &__nav {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 0.5rem;
+      font-size: 0.8rem;
 
       & a {
         text-decoration: none;
@@ -70,7 +70,6 @@
     flex-direction: column;
     margin-left: 12rem;
     & .content {
-      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -84,8 +83,8 @@
   .header {
     position: fixed;
     z-index: 2;
-    max-width: calc(100% - 12rem); 
-    
+    max-width: calc(100% - 12rem);
+
     height: 3.5rem;
     padding: 0 2rem;
     width: 100%;
@@ -120,8 +119,8 @@
       &:hover:after {
         width: 100%;
       }
-      &:hover{
-        i{
+      &:hover {
+        i {
           color: rgb(230, 65, 65);
         }
       }
@@ -129,109 +128,94 @@
   }
 }
 
-
-.estadist{
+.estadist {
   display: flex;
   gap: 3rem;
-  &__estudiantes{
+  &__estudiantes {
     padding: 1rem 4rem;
     background-color: rgb(30, 47, 77);
     color: $blanco;
-    border-radius: .5rem;
-    
+    border-radius: 0.5rem;
   }
-  &__datos{
+  &__datos {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     gap: 2rem;
-    span{
+    span {
       color: $naranja;
     }
-   i{
-    font-size: 2rem;
-   }
+    i {
+      font-size: 2rem;
+    }
   }
-  &__docentes{
-    padding:1rem  3rem;
+  &__docentes {
+    padding: 1rem 3rem;
     background-color: rgb(28, 6, 110);
     color: $blanco;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
-
 }
 
-.grafica{
- width: 35rem;
+.grafica {
+  width: 35rem;
 }
-// Estilos para el bloque de la tabla
 .tabmatricula {
-  &__titulo {
-    font-size: 24px;
-    margin-bottom: 20px;
+  width: 80%;
+  padding: .2rem 2rem;
+  border: 1px solid $negro;
+  border-radius: 0.6rem;
+  &__titulo{
+    color: $azuloscuro;
+    text-align: center;
+    margin: 1rem 0 0 0;
   }
-
-  &__busqueda {
+  &__busqueda{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__entrada {
-      width: 70%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    justify-content: space-around;
+    padding: 1rem;
+    &--agregar{
+      @include btn-mod($azul, $blanco)
     }
-
-    &__agregar {
-      padding: 10px 20px;
-      background-color: #0074b8;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    &--input{
+      border: 1px solid $negro;
+      border-radius: .5rem;
     }
   }
-
-  &__tabla {
-    width: 100%;
+  &__tabla{
     border-collapse: collapse;
-    background-color: white;
-    margin-top: 20px;
-
-    &__encabezado {
-      background-color: #0074b8;
-      color: white;
-
-      &__celda {
-        padding: 10px;
-        text-align: left;
+    width: 100%;
+    &--encabezado{
+     
+      color: $blanco;
+      background-color: $azuloscuro2;
+      & th{
+        
+        padding: .4rem;
       }
     }
-
-    &__fila {
-      &--impar {
-        background-color: #f9f9f9;
+    &--cuerpo{
+      & td{
+        padding: .4rem;
+      }
+      &--par{
+        background: rgb(212, 211, 211);
       }
 
-      &--par {
-        background-color: #fff;
-      }
+    }
+    
+  }
+  &__td--acciones {
+    display: flex;
+    gap: 1rem;
+    .btn-azul {
+      @include btn-mod($azul, $blanco);
+    }
 
-      &__celda {
-        padding: 10px;
-
-        &__boton {
-          padding: 5px 10px;
-          background-color: #333;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          margin-right: 5px;
-        }
-      }
+    .btn-verde {
+      @include btn-mod( $verde, $blanco);
     }
   }
 }

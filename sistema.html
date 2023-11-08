@@ -75,74 +75,109 @@
           <div class="tabmatricula">
             <h2 class="tabmatricula__titulo">Últimas Matrículas</h2>
             <div class="tabmatricula__busqueda">
-              <input type="text" class="tabmatricula__busqueda__entrada" placeholder="Buscar" />
-              <button class="tabmatricula__busqueda__agregar">Agregar Matrícula</button>
+              <input
+                type="text"
+                class="tabmatricula__busqueda--input"
+                placeholder="Buscar"
+              />
+              <button class="tabmatricula__busqueda--agregar">
+                Agregar Matrícula
+              </button>
             </div>
             <table class="tabmatricula__tabla">
-              <thead class="tabmatricula__tabla__encabezado">
+              <thead class="tabmatricula__tabla--encabezado">
                 <tr>
-                  <th class="tabmatricula__tabla__encabezado__celda">ID</th>
-                  <th class="tabmatricula__tabla__encabezado__celda">Estudiante</th>
-                  <th class="tabmatricula__tabla__encabezado__celda">Tutor</th>
-                  <th class="tabmatricula__tabla__encabezado__celda">Grado</th>
-                  <th class="tabmatricula__tabla__encabezado__celda">Acciones</th>
+                  <th class="tabmatricula__th">ID</th>
+                  <th class="tabmatricula__th">Estudiante</th>
+                  <th class="tabmatricula__th">Tutor</th>
+                  <th class="tabmatricula__th">Grado</th>
+                  <th class="tabmatricula__th">Acciones</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="tabmatricula__tabla__fila tabmatricula__tabla__fila--impar">
-                  <td class="tabmatricula__tabla__fila__celda">1</td>
-                  <td class="tabmatricula__tabla__fila__celda">Juana Pérez</td>
-                  <td class="tabmatricula__tabla__fila__celda">Luis Martínez</td>
-                  <td class="tabmatricula__tabla__fila__celda">10º Grado</td>
-                  <td class="tabmatricula__tabla__fila__celda">
-                    <button class="tabmatricula__tabla__fila__celda__boton">Editar</button>
-                    <button class="tabmatricula__tabla__fila__celda__boton">Borrar</button>
+                <tr
+                  class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+                >
+                  <td class="tabmatricula__td">1</td>
+                  <td class="tabmatricula__td">Juana Pérez</td>
+                  <td class="tabmatricula__td">Luis Martínez</td>
+                  <td class="tabmatricula__td">10º Grado</td>
+                  <td class="tabmatricula__td--acciones">
+                    <button class="tabmatricula__td--boton btn-azul">
+                      Editar
+                    </button>
+                    <button class="tabmatricula__td--boton btn-verde">
+                      Borrar
+                    </button>
                   </td>
                 </tr>
-                <tr class="tabmatricula__tabla__fila tabmatricula__tabla__fila--par">
-                  <td class="tabmatricula__tabla__fila__celda">2</td>
-                  <td class="tabmatricula__tabla__fila__celda">Carlos Rodríguez</td>
-                  <td class="tabmatricula__tabla__fila__celda">Maria Sánchez</td>
-                  <td class="tabmatricula__tabla__fila__celda">11º Grado</td>
-                  <td class="tabmatricula__tabla__fila__celda">
-                    <button class="tabmatricula__tabla__fila__celda__boton">Editar</button>
-                    <button class="tabmatricula__tabla__fila__celda__boton">Borrar</button>
+                <tr
+                  class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
+                >
+                  <td class="tabmatricula__td">2</td>
+                  <td class="tabmatricula__td">Carlos Rodríguez</td>
+                  <td class="tabmatricula__td">Maria Sánchez</td>
+                  <td class="tabmatricula__td">11º Grado</td>
+                  <td class="tabmatricula__td--acciones">
+                    <button class="tabmatricula__td--boton btn-azul">
+                      Editar
+                    </button>
+                    <button class="tabmatricula__td--boton btn-verde">
+                      Borrar
+                    </button>
                   </td>
                 </tr>
-                <tr class="tabmatricula__tabla__fila tabmatricula__tabla__fila--par">
-                  <td class="tabmatricula__tabla__fila__celda">2</td>
-                  <td class="tabmatricula__tabla__fila__celda">Carlos Rodríguez</td>
-                  <td class="tabmatricula__tabla__fila__celda">Maria Sánchez</td>
-                  <td class="tabmatricula__tabla__fila__celda">11º Grado</td>
-                  <td class="tabmatricula__tabla__fila__celda">
-                    <button class="tabmatricula__tabla__fila__celda__boton">Editar</button>
-                    <button class="tabmatricula__tabla__fila__celda__boton">Borrar</button>
+                <tr
+                  class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+                >
+                  <td class="tabmatricula__td">2</td>
+                  <td class="tabmatricula__td">Carlos Rodríguez</td>
+                  <td class="tabmatricula__td">Maria Sánchez</td>
+                  <td class="tabmatricula__td">11º Grado</td>
+                  <td class="tabmatricula__td--acciones">
+                    <button class="tabmatricula__td--boton btn-azul">
+                      Editar
+                    </button>
+                    <button class="tabmatricula__td--boton btn-verde">
+                      Borrar
+                    </button>
                   </td>
                 </tr>
-                <tr class="tabmatricula__tabla__fila tabmatricula__tabla__fila--par">
-                  <td class="tabmatricula__tabla__fila__celda">2</td>
-                  <td class="tabmatricula__tabla__fila__celda">Carlos Rodríguez</td>
-                  <td class="tabmatricula__tabla__fila__celda">Maria Sánchez</td>
-                  <td class="tabmatricula__tabla__fila__celda">11º Grado</td>
-                  <td class="tabmatricula__tabla__fila__celda">
-                    <button class="tabmatricula__tabla__fila__celda__boton">Editar</button>
-                    <button class="tabmatricula__tabla__fila__celda__boton">Borrar</button>
+                <tr
+                  class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
+                >
+                  <td class="tabmatricula__td">2</td>
+                  <td class="tabmatricula__td">Carlos Rodríguez</td>
+                  <td class="tabmatricula__td">Maria Sánchez</td>
+                  <td class="tabmatricula__td">11º Grado</td>
+                  <td class="tabmatricula__td--acciones">
+                    <button class="tabmatricula__td--boton btn-azul">
+                      Editar
+                    </button>
+                    <button class="tabmatricula__td--boton btn-verde">
+                      Borrar
+                    </button>
                   </td>
                 </tr>
-                <tr class="tabmatricula__tabla__fila tabmatricula__tabla__fila--par">
-                  <td class="tabmatricula__tabla__fila__celda">2</td>
-                  <td class="tabmatricula__tabla__fila__celda">Carlos Rodríguez</td>
-                  <td class="tabmatricula__tabla__fila__celda">Maria Sánchez</td>
-                  <td class="tabmatricula__tabla__fila__celda">11º Grado</td>
-                  <td class="tabmatricula__tabla__fila__celda">
-                    <button class="tabmatricula__tabla__fila__celda__boton">Editar</button>
-                    <button class="tabmatricula__tabla__fila__celda__boton">Borrar</button>
+                <tr
+                  class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+                >
+                  <td class="tabmatricula__td">2</td>
+                  <td class="tabmatricula__td">Carlos Rodríguez</td>
+                  <td class="tabmatricula__td">Maria Sánchez</td>
+                  <td class="tabmatricula__td">11º Grado</td>
+                  <td class="tabmatricula__td--acciones">
+                    <button class="tabmatricula__td--boton btn-azul">
+                      Editar
+                    </button>
+                    <button class="tabmatricula__td--boton btn-verde">
+                      Borrar
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          
         </main>
       </div>
     </div>

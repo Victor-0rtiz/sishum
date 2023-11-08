@@ -6,6 +6,22 @@
 
 @mixin desktop {
   @media (min-width: 1440px) {
-    @content; 
+    @content;
+  }
+}
+
+@mixin btn-mod($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+
+  border: 1px solid $negro;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
   }
 }
