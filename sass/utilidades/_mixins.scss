@@ -14,7 +14,7 @@
   background-color: $background-color;
   color: $color;
   font-size: 0.9rem;
-  padding: 0.3rem;
+  padding: 0.3rem .9rem;
 
   border: 1px solid $negro;
   border-radius: 0.3rem;
@@ -22,6 +22,6 @@
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: darken($background-color, 10%);
+    background-color: darken($background-color, 20%);
   }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISHUM</title>
-    <link rel="stylesheet" href="/src/css/normalizer.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SISHUM - Calificaciones</title>
+    
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,36 +12,180 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2624ac34cc.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
     <div class="wrapper">
-        <aside class="lateral">
-            <h1 class="lateral__title">Sistema Humberto Pavon Fonseca</h1>
-            <img class="lateral__image" src="../src/img/userwoman.png" alt="Imagen de usuario">
-            <p class="lateral__role">Rol: Administrador</p>
-            <nav class="lateral__nav">
-                
-                <a class="" href="../sistema.html">Inicio</a>
-                <a class="" href="/sistema/perfil.html">Perfil</a>
-                <a class="" href="/sistema/matriculas.html">Matrículas</a>
-                <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
-                <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
-                <a class="" href="/sistema/docentes.html">Docentes</a>
-                
-            </nav>
-        </aside>
-        <div class="contenido">
-            <header class="header">
-            
-                    
-                    <a class="header__user" href="/sistema/perfil.html"> Juana Pereira Lopez</a>
-                    <a class="header__logout" href="/">Cerrar Sesión</a>
-                
-            </header>
-            <main class="main-content">
-                <!-- Contenido principal del sistema -->
-            </main>
-        </div>
+      <aside class="lateral">
+        <h1 class="lateral__title">Sistema Humberto Pavon Fonseca</h1>
+        <img
+          class="lateral__image"
+          src="../src/img/userwoman.png"
+          alt="Imagen de usuario"
+        />
+        <p class="lateral__role">Rol: Administrador</p>
+        <nav class="lateral__nav">
+            <a class="" href="../sistema.html">Inicio</a>
+          <a class="" href="/sistema/perfil.html">Perfil</a>
+          <a class="" href="/sistema/matriculas.html">Matrículas</a>
+          <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+          <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+          <a class="" href="/sistema/docentes.html">Docentes</a>
+        </nav>
+      </aside>
+      <div class="contenido">
+        <header class="header">
+          <a class="header__user" href="/sistema/perfil.html">
+            Juana Pereira Lopez</a
+          >
+          <a class="header__logout" href="/"
+            >Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </header>
+        <main class="content">
+          <!-- inicio contenido -->
+          <table class="tabmatricula__tabla">
+            <thead class="tabmatricula__tabla--encabezado">
+              <tr>
+                <th class="tabmatricula__th">ID</th>
+                <th class="tabmatricula__th">Estudiante</th>
+                <th class="tabmatricula__th">Nota</th>
+                <th class="tabmatricula__th">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Fila 1 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+              >
+                <td class="tabmatricula__td">8</td>
+                <td class="tabmatricula__td">María Gómez</td>
+                <td class="tabmatricula__td">90</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 2 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
+              >
+                <td class="tabmatricula__td">9</td>
+                <td class="tabmatricula__td">Juan López</td>
+                <td class="tabmatricula__td">85</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 3 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+              >
+                <td class="tabmatricula__td">10</td>
+                <td class="tabmatricula__td">Ana Rodríguez</td>
+                <td class="tabmatricula__td">78</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 4 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
+              >
+                <td class="tabmatricula__td">11</td>
+                <td class="tabmatricula__td">Elena Martínez</td>
+                <td class="tabmatricula__td">95</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 5 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+              >
+                <td class="tabmatricula__td">12</td>
+                <td class="tabmatricula__td">Pedro Ramírez</td>
+                <td class="tabmatricula__td">88</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 6 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
+              >
+                <td class="tabmatricula__td">13</td>
+                <td class="tabmatricula__td">Sofía López</td>
+                <td class="tabmatricula__td">75</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 7 -->
+              <tr
+                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
+              >
+                <td class="tabmatricula__td">14</td>
+                <td class="tabmatricula__td">Javier Rodríguez</td>
+                <td class="tabmatricula__td">80</td>
+                <td class="tabmatricula__td--acciones">
+                  <button class="tabmatricula__td--boton btn-azul">
+                    Editar
+                  </button>
+                  <button class="tabmatricula__td--boton btn-verde">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- fin contenido -->
+        </main>
+      </div>
     </div>
-</body>
+
+    <script src="/src/js/aos.js"></script>
+    
+  </body>
 </html>

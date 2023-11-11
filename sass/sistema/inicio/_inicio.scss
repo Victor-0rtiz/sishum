@@ -153,7 +153,7 @@
   }
   &__docentes {
     padding: 1rem 3rem;
-    background-color: rgb(28, 6, 110);
+    background-color:#23213f;
     color: $blanco;
     border-radius: 0.5rem;
   }
@@ -163,10 +163,11 @@
   width: 35rem;
 }
 .tabmatricula {
-  width: 80%;
+  width: 45rem;
   padding: .2rem 2rem;
   border: 1px solid $negro;
-  border-radius: 0.6rem;
+  border-radius: 0.6rem; 
+  
   &__titulo{
     color: $azuloscuro;
     text-align: center;
@@ -199,6 +200,7 @@
     &--cuerpo{
       & td{
         padding: .4rem;
+        text-align: center;
       }
       &--par{
         background: rgb(212, 211, 211);
@@ -209,9 +211,12 @@
   }
   &__td--acciones {
     display: flex;
+    justify-content: space-evenly;
+    
     gap: 1rem;
     .btn-azul {
       @include btn-mod($azul, $blanco);
+     
     }
 
     .btn-verde {
