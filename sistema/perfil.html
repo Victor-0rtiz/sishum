@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SISHUM - Perfil</title>
-    
+
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,6 @@
       src="https://kit.fontawesome.com/2624ac34cc.js"
       crossorigin="anonymous"
     ></script>
-   
   </head>
   <body>
     <div class="wrapper">
@@ -31,7 +30,7 @@
         />
         <p class="lateral__role">Rol: Administrador</p>
         <nav class="lateral__nav">
-            <a class="" href="../sistema.html">Inicio</a>
+          <a class="" href="../sistema.html">Inicio</a>
           <a class="" href="/sistema/perfil.html">Perfil</a>
           <a class="" href="/sistema/matriculas.html">Matrículas</a>
           <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
@@ -49,12 +48,40 @@
           ></a>
         </header>
         <main class="content">
-          
+          <h2 class="titulo-pagina">Perfil</h2>
+
+          <div class="perfil">
+            <img src="../src/img/userwoman.png" alt="" class="perfil__img" />
+            <h3 class="perfil__rol">Administrador</h3>
+
+            <form class="perfil__form">
+              <div class="perfil__div">
+                <div class="perfil__datos">
+                  <label for="">Nombres</label>
+                  <input type="text" value="Juana " disabled />
+                  <label for="">Apellidos</label>
+                  <input type="text" value=" Pereira Lopez" disabled />
+                  <label for="">Edad</label>
+                  <input type="text" value="24" disabled />
+                </div>
+                <div class="perfil__datos">
+                  <label for="">Telefono</label>
+                  <input type="text" value="81818181 " disabled />
+                  <label for="">Email</label>
+                  <input type="text" value=" correo@correo.com" disabled />
+                  <label for="">Dirección</label>
+                  <input type="text" value="24" disabled />
+                </div>
+              </div>
+              <label for="">Información adicional</label>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
+            </form>
+          </div>
+          <button class="btn-editar">Editar Perfil</button>
         </main>
       </div>
     </div>
 
     <script src="/src/js/aos.js"></script>
-    
   </body>
 </html>
