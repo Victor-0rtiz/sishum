@@ -1,0 +1,13 @@
+.docentes__busqueda {
+  display: flex;
+  justify-content: space-between;
+ 
+  gap: 1rem;
+  &--agregar {
+    @include btn-mod($azul, $blanco);
+  }
+  &--input {
+    border: 1px solid $negro;
+    border-radius: 0.5rem;
+  }
+}
