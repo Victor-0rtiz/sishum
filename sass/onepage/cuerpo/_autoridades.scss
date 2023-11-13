@@ -1,28 +1,67 @@
 .autoridades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 2rem;
+  color: $azuloscuro;
+
+  &__header {
+    border-bottom: 4px solid $naranja;
+    
+  }
+
+  &__div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    flex-direction: column;
-    gap: 2rem;
-    color: $azuloscuro;
-  
+    gap: 1rem;
+
+    &--contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+
+    &--titulo {
+    }
+
+    &--contenedor img {
+      width: 11rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
+  }
+
+  .excelencia{
+   
     &__header {
       border-bottom: 4px solid $naranja;
+       margin-top: 2rem;
     }
   
     &__div {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 6rem;
   
       &--contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
   
         p {
           font-family: "Space Grotesk", sans-serif;
@@ -35,8 +74,8 @@
       }
   
       &--contenedor img {
-        width: 16rem;
-        height: 15rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
       }
     }

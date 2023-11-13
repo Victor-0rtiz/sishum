@@ -1,37 +1,69 @@
 .galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: $azuloscuro;
+  color: $blanco;
+
+  &__div {
+    width: 40rem;
+    height: 25rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 4rem;
-    background-color: $azuloscuro;
-    color: $blanco;
-  
-    &__div {
-      width: 40rem;
-      height: 25rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    &__header {
-      border-bottom: 4px solid $naranja;
-      font-weight: 200;
-    }
-  
-    &__imagenes {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      padding: 1rem;
-  
-      img {
-        width: 10rem;
-        height: 12rem;
-        border-radius: 0.5rem;
-      }
+    justify-content: center;
+  }
+
+  &__header {
+    border-bottom: 4px solid $naranja;
+   
+  }
+
+  &__imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+
+    img {
+      width: 10rem;
+      height: 12rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
     }
   }
-  
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img{ 
+
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    transition: width 0.3s, height 0.3s;
+  }
+
+  & .icono-cierre{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+
+

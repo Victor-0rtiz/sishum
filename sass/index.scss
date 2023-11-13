@@ -8,9 +8,15 @@
     font-family: "Genera Grotesk";
     src: url("/src/fonts/Genera\ Grotesk\ Heavy.ttf") format("truetype");
   
-    font-weight: normal;
-    font-style: normal;
+   
   }
+  @font-face {
+    font-family: "Poppins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap") format("truetype");
+  
+    
+  }
+  
   
   * {
     margin: 0;
@@ -18,8 +24,8 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "Genera Grotesk", sans-serif;
-    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    
   }
   
   img {
