@@ -48,7 +48,7 @@
           ></a>
         </header>
         <main class="content">
-          <h2 class="titulo-pagina">Perfil</h2>
+          <h2 class="titulo-contenido-v">Perfil</h2>
 
           <div class="perfil">
             <img src="../src/img/userwoman.png" alt="" class="perfil__img" />
@@ -57,27 +57,81 @@
             <form class="perfil__form">
               <div class="perfil__div">
                 <div class="perfil__datos">
-                  <label for="">Nombres</label>
-                  <input type="text" value="Juana " disabled />
-                  <label for="">Apellidos</label>
-                  <input type="text" value=" Pereira Lopez" disabled />
-                  <label for="">Edad</label>
-                  <input type="text" value="24" disabled />
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for="">Nombres</label>
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value="Juana "
+                      disabled
+                    />
+                  </div>
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for=""
+                      >Apellidos</label
+                    >
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value=" Pereira Lopéz"
+                      disabled
+                    />
+                  </div>
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for="">Edad</label>
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value="24"
+                      disabled
+                    />
+                  </div>
                 </div>
                 <div class="perfil__datos">
-                  <label for="">Telefono</label>
-                  <input type="text" value="81818181 " disabled />
-                  <label for="">Email</label>
-                  <input type="text" value=" correo@correo.com" disabled />
-                  <label for="">Dirección</label>
-                  <input type="text" value="24" disabled />
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for="">Telefono</label>
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value="81818181 "
+                      disabled
+                    />
+                  </div>
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for="">Email</label>
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value=" correo@correo.com"
+                      disabled
+                    />
+                  </div>
+                  <div class="perfil__datos--entradas">
+                    <label class="perfil__datos--labels" for=""
+                      >Dirección</label
+                    >
+                    <input
+                      class="perfil__datos--inputs"
+                      type="text"
+                      value="24"
+                      disabled
+                    />
+                  </div>
                 </div>
               </div>
-              <label for="">Información adicional</label>
-              <textarea name="" id="" cols="30" rows="5"></textarea>
+
+              <label class="perfil__datos--labels" for=""
+                >Información adicional</label
+              >
+              <textarea
+                class="perfil__datos--textarea"
+                name=""
+                id=""
+              ></textarea>
             </form>
           </div>
-          <button class="btn-editar">Editar Perfil</button>
+          
+          <button class="btn-editar"> <i class="fa-solid fa-pencil"></i>Editar Perfil</button>
         </main>
       </div>
     </div>

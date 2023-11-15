@@ -3,11 +3,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  &__rol{
+    color: $azuloscuro;
+  }
+  &__img{
+    width: 5rem;
+    height: 5rem;
+  }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
   }
 
   &__div {
@@ -21,8 +30,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
+    &--entradas {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    &--inputs {
+      border: none;
+      color: $azul;
+      border-bottom: 0.1rem solid #2c2c2c;
+      width: 100%;
+      outline: none;
+      font-weight: 600;
+    }
+    &--labels {
+      font-weight: 700;
+    }
+    &--textarea {
+      width: 100%;
+      height: 3rem;
+
+      border: 0.1rem solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: none;
+    }
   }
 }
-.btn-editar{
-@include btn-mod($azul, $blanco);
+.btn-editar {
+  @include btn-mod($azul, $blanco);
 }

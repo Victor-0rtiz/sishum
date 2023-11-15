@@ -36,7 +36,7 @@
   
       &--inputs {
         border: none;
-        border-bottom: 0.13rem solid #2c2c2c;
+        border-bottom: 0.13rem solid rgba(43, 43, 43, 0.4);
         width: 100%;
         outline: none;
       }
@@ -88,4 +88,7 @@
       border: 1px solid $negro;
       border-radius: 0.5rem;
     }
+  }
+  .titulo-form{
+margin: 1rem auto;
   }
