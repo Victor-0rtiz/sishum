@@ -222,5 +222,8 @@
     .btn-verde {
       @include btn-mod( $verde, $blanco);
     }
+    .btn-rojo {
+      @include btn-mod( $rojo, $blanco);
+    }
   }
 }
