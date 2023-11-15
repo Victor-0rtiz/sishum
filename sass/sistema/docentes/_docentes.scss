@@ -1,7 +1,7 @@
 .docentes__busqueda {
   display: flex;
   justify-content: space-between;
- 
+
   gap: 1rem;
   &--agregar {
     @include btn-mod($azul, $blanco);
@@ -11,3 +11,5 @@
     border-radius: 0.5rem;
   }
 }
+
+

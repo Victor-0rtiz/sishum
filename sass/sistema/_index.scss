@@ -1,3 +1,91 @@
 @import "inicio/inicio";
 @import "perfil/perfil";
 @import "docentes/docentes";
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__contenedor {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__div {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+    }
+    &__datos {
+      display: flex;
+      gap: 0.9rem;
+  
+      flex-direction: column;
+      justify-content: space-between;
+      &--entradas {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0.5rem;
+      }
+  
+      &--inputs {
+        border: none;
+        border-bottom: 0.13rem solid #2c2c2c;
+        width: 100%;
+        outline: none;
+      }
+  
+      &--labels {
+       font-weight: 700;
+      }
+      &--selects{
+        width: 100%;
+        padding: .15rem;
+       text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        & option{
+            background-color: #f2f2f2;
+            color: #333;
+            padding: .5rem;
+
+        }
+        
+      }
+      &--textarea{
+        width: 40%;
+        height: 3rem;
+        
+       
+        border: .1rem solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: none; 
+      }
+    }
+    &__btn-verde{
+      margin-top: 1rem;
+      @include btn-mod($verde, $blanco);
+    }
+  }
+
+
+  .tablas__busqueda {
+    display: flex;
+    justify-content: space-between;
+  
+    gap: 1rem;
+    &--agregar {
+      @include btn-mod($azul, $blanco);
+    }
+    &--input {
+      border: 1px solid $negro;
+      border-radius: 0.5rem;
+    }
+  }
