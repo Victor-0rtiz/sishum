@@ -8,9 +8,13 @@
     text-align: center;
     gap: 2rem;
     font-weight: 700;
+    
   
     &__div {
-      width: 40rem;
+      width: 20rem;
+      @include laptop{
+        width: 40rem;
+      }
     }
   
     &__header {

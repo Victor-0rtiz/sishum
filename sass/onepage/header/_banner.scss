@@ -1,32 +1,64 @@
 .banner {
-    background-image: url('/src/img/fondosishunm.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/src/img/fondosishunm.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  @include laptop{
+    padding: 5rem;
+  }
+
+  &__div {
+    background-color: rgba(21, 55, 66, 0.8);
+    width: 40rem;
+    height: 25rem;
+    padding: 2rem;
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 5rem;
-  
-    &__div {
-      background-color: rgba(21, 55, 66, 0.8);
-      width: 44rem;
-      height: 25rem;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    gap: 2rem;
+    @include laptop {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       border-radius: 0.5rem;
-      gap: 2rem;
-  
-      &--header {
-        color: white;
-        text-align: center;
+    }
+
+    &--titulos {
+      text-align: center;
+      color: $blanco;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
-  
-      &--img {
+      100% {
+        opacity: 1;
+      }
+    }
+    &--header {
+      color: white;
+      text-align: center;
+      font-size: 1.7rem;
+      margin: 0.4rem 0;
+    }
+
+    &--img {
+      width: 6rem;
+      height: 9rem;
+
+      @include laptop {
         width: 12rem;
-        height: 14rem;
+        height: 12rem;
       }
     }
   }
-  
+}

@@ -15,8 +15,15 @@
   &__div {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    @include laptop{
+     flex-direction: row;
+      justify-content: center;
+    align-items: center;
+    }
 
     &--contenedor {
       display: flex;
@@ -48,13 +55,20 @@
     &__header {
       border-bottom: 4px solid $naranja;
        margin-top: 2rem;
+       text-align: center;
     }
   
     &__div {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      @include laptop{
+        justify-content: center;
+      align-items: center;
       gap: 6rem;
+      }
   
       &--contenedor {
         display: flex;

@@ -4,13 +4,13 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  padding: 4rem;
+  padding: 2rem;
   background-color: $azuloscuro;
   color: $blanco;
 
   &__div {
     width: 40rem;
-    height: 25rem;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,9 +23,13 @@
 
   &__imagenes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
+
+    @include laptop{
+      grid-template-columns: repeat(4,1fr);
+    }
 
     img {
       width: 10rem;

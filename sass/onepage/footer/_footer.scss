@@ -1,65 +1,83 @@
 .footer {
-    background-color: #153742;
-    color: white;
-    font-family: "Space Grotesk", sans-serif;
+  background-color: #153742;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.6rem 3rem;
+
+  @include laptop {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__contacto,
+  &__sociales {
+    width: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: .6rem 3rem;
-  
-    &__div {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    &__contacto,
-    &__sociales {
-      width: 25rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-  
-    &__header {
-      text-align: center;
-      border-bottom: 4px solid $naranja;
-    }
-  
-    &__contacto--info {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: .4rem;
-      padding: 1rem;
-      
-      img {
-        width: 6rem;
-        height: 7rem;
-      }
-    }
-  
-    &__contacto--logos {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 1rem;
-    }
-  
-    &__sociales--info {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: .5rem;
-      padding: 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
     }
   }
-  
+
+  &__header {
+    text-align: center;
+    border-bottom: 4px solid $naranja;
+  }
+
+  &__contacto--info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1rem;
+
+    @include laptop {
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    img {
+      width: 6rem;
+      height: 7rem;
+    }
+  }
+
+  &__contacto--logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    @include laptop{
+      flex-direction: column;
+    justify-content: flex-start;
+    }
+  }
+
+  &__sociales--info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
