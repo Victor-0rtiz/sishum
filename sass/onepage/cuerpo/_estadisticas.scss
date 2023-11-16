@@ -1,11 +1,18 @@
 .estadisticas {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 3rem;
     background-color: $azuloscuro;
     color: white;
     text-align: center;
+
+    @include laptop{
+      flex-direction: row;
+      justify-content: space-around;
+    align-items: center;
+    }
   
     &__div--numero {
       color: $naranja;
