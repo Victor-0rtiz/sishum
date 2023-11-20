@@ -26,7 +26,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  let mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+    freeModeMomentum: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 1, // Sin delay
+      disableOnInteraction: false,
+    },
+    speed: 2000, // Ajusta la velocidad según sea necesario
+  });
+  
   const imagenes = document.querySelectorAll(".galeria__imagenes img");
+
+ 
 
   imagenes.forEach((img) => {
     img.addEventListener("click", (e) => {
