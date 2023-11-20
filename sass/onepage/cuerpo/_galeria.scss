@@ -3,14 +3,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  padding: .6rem;
+  gap: .5rem;
+  padding: 1rem;
   background-color: $azuloscuro;
   color: $blanco;
 
   @include laptop{
     gap: 2rem;
     padding: 2rem;
+    
   }
 
   &__header {
@@ -19,6 +20,7 @@
   }
 
   .swiper-container {
+    padding: 0 .5rem 1rem .5rem ;
     width: 95%; 
     overflow: hidden;
     .swiper-wrapper {

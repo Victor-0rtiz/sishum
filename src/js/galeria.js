@@ -31,14 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 10,
     freeMode: true,
     freeModeMomentum: false,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+   
     loop: true,
     autoplay: {
       delay: 1, // Sin delay
