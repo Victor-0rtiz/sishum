@@ -56,13 +56,10 @@
     }
 
     &--img {
-      width: 6rem;
+      width: 9rem;
       height: auto;
 
-      @include laptop {
-       width: 9rem;
-        height: auto;
-      }
+     
     }
   }
 }
