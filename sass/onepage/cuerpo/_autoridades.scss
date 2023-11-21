@@ -2,14 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding:  3rem 2rem;
   flex-direction: column;
   gap: 2rem;
   color: $azuloscuro;
+  @include laptop{
+    padding: 3rem;
+  }
 
   &__header {
     border-bottom: 4px solid $naranja;
-    
   }
 
   &__div {
@@ -19,10 +21,10 @@
     align-items: center;
     gap: 1rem;
 
-    @include laptop{
-     flex-direction: row;
+    @include laptop {
+      flex-direction: row;
       justify-content: center;
-    align-items: center;
+      align-items: center;
     }
 
     &--contenedor {
@@ -42,57 +44,76 @@
     &--titulo {
     }
 
-    &--contenedor img {
-      width: 9rem;
-      height: 9rem;
+    &--imagen {
+      width: 8rem;
+      height: 8rem;
+      background-color: aqua;
       border-radius: 50%;
+
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
     }
   }
+}
+
+.excelencia {
+  &__header {
+    border-bottom: 4px solid $naranja;
+    margin-top: 2rem;
+    text-align: center;
   }
 
-  .excelencia{
-   
-    &__header {
-      border-bottom: 4px solid $naranja;
-       margin-top: 2rem;
-       text-align: center;
-    }
-  
-    &__div {
-      display: flex;
+  &__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    @include laptop {
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 1rem;
-      @include laptop{
-        justify-content: center;
       align-items: center;
       flex-direction: row;
       gap: 6rem;
+    }
+
+    &--contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        text-align: center;
       }
-  
-      &--contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-  
-        p {
-          font-family: "Space Grotesk", sans-serif;
-          font-weight: 700;
-          text-align: center;
-        }
-      }
-  
-      &--titulo {
-      }
-  
-      &--contenedor img {
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
+    }
+
+    &--titulo {
+    }
+
+    &--imagen {
+      width: 7rem;
+      height: 7rem;
+      background-color: aqua;
+      border-radius: 50%;
+
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        cursor: pointer;
       }
     }
   }
-  
+}

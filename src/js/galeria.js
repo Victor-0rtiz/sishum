@@ -41,10 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   const imagenes = document.querySelectorAll(".galeria__imagenes img");
-
+ const imagenes2 = document.querySelectorAll(".autoridades__div--imagen");
+ const imagenes3 = document.querySelectorAll(".excelencia__div--imagen");
  
 
   imagenes.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      abrirModal(e.target.src);
+      hideMobileMenu();
+    });
+  });
+  imagenes2.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      abrirModal(e.target.src);
+      hideMobileMenu();
+    });
+  });
+  imagenes3.forEach((img) => {
     img.addEventListener("click", (e) => {
       abrirModal(e.target.src);
       hideMobileMenu();
