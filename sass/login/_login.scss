@@ -3,68 +3,87 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- 
+
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   &__header {
   }
- 
+
   &__div {
     font-family: "Space Grotesk", sans-serif;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    place-items: center;
     border-radius: 1rem;
-    padding: 4rem;
+    padding: 0.5rem;
     color: white;
     background-color: rgba(21, 55, 66, 0.8);
-    gap: 3rem;
- 
-    &--img {
-      width: 15rem;
-      height: 18rem;
+
+    @include laptop {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      padding: 2rem 9rem;
+      gap: 2rem;
     }
- 
+    &--img {
+      width: 8rem;
+      height: auto;
+      @include laptop {
+        width: 10rem;
+        height: auto;
+      }
+    }
+
     .login__formulario {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: start;
-      gap: 3rem;
-    }
- 
-    .login__div--contenedor {
-      display: flex;
       gap: 1rem;
+      @include laptop {
+        gap: 3rem;
+      }
+    }
+
+    &--contenedor {
+      display: flex;
+      gap: 1.5rem;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
- 
+     
+     
+
       a {
         text-decoration: none;
         color: white;
       }
- 
+
       .login__formulario--grupo {
         display: flex;
         gap: 1rem;
-        align-items: start;
+        align-items: center;
+        flex-direction: column;
         justify-content: space-between;
         width: 20rem;
+       @include laptop{
+        flex-direction: row;
+       }
       }
- 
+
       .form-input {
         border: none;
-        border-bottom: 0.2rem solid #2c2c2c;
+        border-bottom: 0.2rem solid rgba(114, 114, 114, 0.6);
         outline: none;
         padding: 5px;
         color: white;
         background-color: rgba(49, 51, 51, 0.062);
-        
       }
- 
+
       .btn {
         padding: 0.5rem;
         width: 9rem;
@@ -72,32 +91,22 @@
         color: white;
         border: 1px solid $negro;
         border-radius: 0.5rem;
- 
+
         &:hover {
           background-color: $cyan2;
           cursor: pointer;
         }
       }
- 
+
       .input-icon {
         position: relative;
       }
- 
+
       .input-icon i {
-        
         position: absolute;
         left: -1.1rem;
         top: 0.1875rem;
       }
- 
-      
     }
   }
- }
- 
-
-
-
-
-
- 
+}
