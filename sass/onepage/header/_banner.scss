@@ -35,6 +35,10 @@
       text-align: center;
       color: $blanco;
       animation: fadeIn 2s ease-in-out;
+      h2{
+        font-size: 1.75rem;
+      }
+    
     }
     @keyframes fadeIn {
       0% {
@@ -52,10 +56,13 @@
     }
 
     &--img {
-      width: 9rem;
+      width: 6rem;
       height: auto;
 
-     
+      @include laptop {
+       width: 9rem;
+        height: auto;
+      }
     }
   }
 }
