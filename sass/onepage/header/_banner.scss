@@ -23,7 +23,7 @@
     flex-direction: column-reverse;
     justify-content: space-around;
     border-radius: 0.5rem;
-    gap: 2rem;
+    gap: .5rem;
     @include laptop {
       display: flex;
       align-items: center;
@@ -52,13 +52,10 @@
     }
 
     &--img {
-      width: 45%;
-      height: 45%;
+      width: 9rem;
+      height: auto;
 
-      @include laptop {
-        width: 30%;
-        height: auto;
-      }
+     
     }
   }
 }
