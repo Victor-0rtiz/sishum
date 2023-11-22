@@ -71,7 +71,7 @@
         justify-content: space-between;
         width: 20rem;
        @include laptop{
-        flex-direction: row;
+        flex-direction: row; 
        }
       }
 
