@@ -43,10 +43,12 @@
   &__div {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 
     & img {
-      width: auto;
+      
+     width: auto;
+     padding: .2rem;
     }
 
     &--url {

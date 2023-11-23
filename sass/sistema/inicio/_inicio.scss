@@ -22,6 +22,11 @@
         font-size: 1.4rem;
       }
     }
+    &__logo {
+      height: auto;
+      width: 10rem;
+      padding: .3rem;
+    }
 
     &__nav {
       display: flex;
