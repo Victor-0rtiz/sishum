@@ -46,7 +46,7 @@
           <a class="" href="/sistema/docentes.html">Docentes</a>
         </nav>
       </aside>
-      <div class="contenido">
+      <section class="contenido">
         <header class="header">
           <a class="header__user" href="/sistema/perfil.html">
             Juana Pereira Lopez</a
@@ -57,7 +57,7 @@
         </header>
         <main class="content">
           <!-- inicio contenido -->
-          <h2 class="titulo-contenido-v">Calificaciones</h2>
+          <h2 class="titulo-contenido-v">Calificaciones - Grados</h2>
           <div class="tablas__busqueda">
             <input
               type="text"
@@ -71,143 +71,126 @@
               <i class="fa-solid fa-circle-plus"></i> Agregar Calificación
             </a>
           </div>
-          <table class="tabmatricula__tabla">
-            <thead class="tabmatricula__tabla--encabezado">
-              <tr>
-                <th class="tabmatricula__th">ID</th>
-                <th class="tabmatricula__th">Estudiante</th>
-                <th class="tabmatricula__th">Nota</th>
-                <th class="tabmatricula__th">Acciones</th>
-              </tr>
+          <table class="tabsistema__tabla" id="matriculaTable">
+            <thead class="tabsistema__tabla--encabezado">
+                <tr>
+                    <th class="tabsistema__th">ID</th>
+                    <th class="tabsistema__th">Grado</th>
+                    <th class="tabsistema__th">Turno</th>
+                    <th class="tabsistema__th">Acciones</th>
+                </tr>
             </thead>
             <tbody>
-              <!-- Fila 1 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
-              >
-                <td class="tabmatricula__td">8</td>
-                <td class="tabmatricula__td">María Gómez</td>
-                <td class="tabmatricula__td">90</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 2 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
-              >
-                <td class="tabmatricula__td">9</td>
-                <td class="tabmatricula__td">Juan López</td>
-                <td class="tabmatricula__td">85</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 3 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
-              >
-                <td class="tabmatricula__td">10</td>
-                <td class="tabmatricula__td">Ana Rodríguez</td>
-                <td class="tabmatricula__td">78</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 4 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
-              >
-                <td class="tabmatricula__td">11</td>
-                <td class="tabmatricula__td">Elena Martínez</td>
-                <td class="tabmatricula__td">95</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 5 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
-              >
-                <td class="tabmatricula__td">12</td>
-                <td class="tabmatricula__td">Pedro Ramírez</td>
-                <td class="tabmatricula__td">88</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 6 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--par"
-              >
-                <td class="tabmatricula__td">13</td>
-                <td class="tabmatricula__td">Sofía López</td>
-                <td class="tabmatricula__td">75</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-
-              <!-- Fila 7 -->
-              <tr
-                class="tabmatricula__tabla--cuerpo tabmatricula__tabla--cuerpo--impar"
-              >
-                <td class="tabmatricula__td">14</td>
-                <td class="tabmatricula__td">Javier Rodríguez</td>
-                <td class="tabmatricula__td">80</td>
-                <td class="tabmatricula__td--acciones">
-                  <button class="tabmatricula__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabmatricula__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
+                <!-- Fila 1 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">8</td>
+                    <td class="tabsistema__td">Noveno</td>
+                    <td class="tabsistema__td">Mañana</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 2 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">9</td>
+                    <td class="tabsistema__td">Segundo</td>
+                    <td class="tabsistema__td">Tarde</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 3 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">10</td>
+                    <td class="tabsistema__td">Tercero</td>
+                    <td class="tabsistema__td">Mañana</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 4 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">11</td>
+                    <td class="tabsistema__td">Cuarto</td>
+                    <td class="tabsistema__td">Tarde</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 5 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">12</td>
+                    <td class="tabsistema__td">Quinto</td>
+                    <td class="tabsistema__td">Mañana</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 6 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">13</td>
+                    <td class="tabsistema__td">Sexto</td>
+                    <td class="tabsistema__td">Tarde</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 7 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">14</td>
+                    <td class="tabsistema__td">Séptimo</td>
+                    <td class="tabsistema__td">Mañana</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 8 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">15</td>
+                    <td class="tabsistema__td">Octavo</td>
+                    <td class="tabsistema__td">Tarde</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 9 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/grados-calificaciones.html">
+                    <td class="tabsistema__td">16</td>
+                    <td class="tabsistema__td">Noveno</td>
+                    <td class="tabsistema__td">Mañana</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="../sistema/calificaciones/grados-editar-g.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
             </tbody>
-          </table>
+        </table>
+        
           <!-- fin contenido -->
         </main>
-      </div>
+      </section>
     </div>
 
     <script src="/src/js/aos.js"></script>
     <script src="/src/js/swt.js"></script>
+    <script src="/src/js/tab-dinamic.js"></script>
     
   </body>
 </html>

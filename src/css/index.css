@@ -1070,23 +1070,23 @@ template {
   width: 35rem;
 }
 
-.tabmatricula {
+.tabsistema {
   width: 45rem;
   padding: 0.2rem 2rem;
   border: 1px solid black;
   border-radius: 0.6rem;
 }
-.tabmatricula__titulo {
+.tabsistema__titulo {
   color: #153742;
   text-align: center;
   margin: 1rem 0 0 0;
 }
-.tabmatricula__busqueda {
+.tabsistema__busqueda {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
 }
-.tabmatricula__busqueda--agregar {
+.tabsistema__busqueda--agregar {
   background-color: #3d5296;
   color: white;
   font-size: 0.9rem;
@@ -1097,37 +1097,45 @@ template {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.tabmatricula__busqueda--agregar:hover {
+.tabsistema__busqueda--agregar:hover {
   background-color: #202a4d;
 }
-.tabmatricula__busqueda--input {
+.tabsistema__busqueda--input {
   border: 1px solid black;
   border-radius: 0.5rem;
 }
-.tabmatricula__tabla {
+.tabsistema__tabla {
   border-collapse: collapse;
   width: 100%;
 }
-.tabmatricula__tabla--encabezado {
+.tabsistema__tabla--encabezado {
   color: white;
   background-color: rgb(11, 81, 100);
 }
-.tabmatricula__tabla--encabezado th {
+.tabsistema__tabla--encabezado th {
   padding: 0.4rem;
 }
-.tabmatricula__tabla--cuerpo td {
+.tabsistema__tabla--cuerpo td {
   padding: 0.4rem;
   text-align: center;
 }
-.tabmatricula__tabla--cuerpo--par {
+.tabsistema__tabla--cuerpo--par {
   background: rgb(212, 211, 211);
 }
-.tabmatricula__td--acciones {
+.tabsistema__tabla--cuerpo--par:hover {
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+.tabsistema__tabla--cuerpo--impar:hover {
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+.tabsistema__td--acciones {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
 }
-.tabmatricula__td--acciones .btn-azul {
+.tabsistema__td--acciones .btn-azul {
   background-color: #3d5296;
   color: white;
   font-size: 0.9rem;
@@ -1138,10 +1146,10 @@ template {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.tabmatricula__td--acciones .btn-azul:hover {
+.tabsistema__td--acciones .btn-azul:hover {
   background-color: #202a4d;
 }
-.tabmatricula__td--acciones .btn-verde {
+.tabsistema__td--acciones .btn-verde {
   background-color: rgb(54, 122, 54);
   color: white;
   font-size: 0.9rem;
@@ -1152,10 +1160,10 @@ template {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.tabmatricula__td--acciones .btn-verde:hover {
+.tabsistema__td--acciones .btn-verde:hover {
   background-color: #173317;
 }
-.tabmatricula__td--acciones .btn-rojo {
+.tabsistema__td--acciones .btn-rojo {
   background-color: rgb(189, 77, 77);
   color: white;
   font-size: 0.9rem;
@@ -1166,7 +1174,7 @@ template {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.tabmatricula__td--acciones .btn-rojo:hover {
+.tabsistema__td--acciones .btn-rojo:hover {
   background-color: #782c2c;
 }
 

@@ -163,14 +163,14 @@
     padding: 1rem 3rem;
     background-color:#23213f;
     color: $blanco;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; 
   }
 }
 
 .grafica {
   width: 35rem;
 }
-.tabmatricula {
+.tabsistema {
   width: 45rem;
   padding: .2rem 2rem;
   border: 1px solid $negro;
@@ -212,6 +212,16 @@
       }
       &--par{
         background: rgb(212, 211, 211);
+        &:hover{
+          cursor: pointer;
+          background-color: darken($blanco, 30%);
+        }
+      }
+      &--impar{
+        &:hover{
+          cursor: pointer;
+          background-color: darken($blanco, 30%);
+        }
       }
 
     }
