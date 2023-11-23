@@ -26,6 +26,9 @@
       height: auto;
       width: 10rem;
       padding: .3rem;
+      @include laptop{
+        margin-top: 1rem;
+      }
     }
 
     &__nav {

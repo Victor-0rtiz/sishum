@@ -940,6 +940,11 @@ template {
   width: 10rem;
   padding: 0.3rem;
 }
+@media (min-width: 1024px) {
+  .wrapper .lateral__logo {
+    margin-top: 1rem;
+  }
+}
 .wrapper .lateral__nav {
   display: flex;
   flex-direction: column;
