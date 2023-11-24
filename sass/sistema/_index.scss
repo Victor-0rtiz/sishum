@@ -72,10 +72,16 @@
     &__btn-verde{
       margin-top: 1rem;
       @include btn-mod($verde, $blanco);
+      i{
+        margin-right: 10px;
+      }
     }
     &__btn-azul{
       margin-top: 1rem;
       @include btn-mod($azul, $blanco); 
+      i{
+        margin-right: 10px;
+      }
     }
   }
 
