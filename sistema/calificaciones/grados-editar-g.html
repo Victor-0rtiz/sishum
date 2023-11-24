@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    id="favicon"
+    href="../src/img/logo svg.svg"
+    type="image/svg+xml"
+  />
+    <title>SISHUM - Agregar</title>
+
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2624ac34cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="lateral">
+        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">
+        <img
+          class="lateral__image"
+          src="../../src/img/userwoman.png"
+          alt="Imagen de usuario"
+        />
+        <p class="lateral__role">Rol: Administrador</p>
+        <nav class="lateral__nav">
+          <a class="" href="../../sistema.html">Inicio</a>
+          <a class="" href="/sistema/perfil.html">Perfil</a>
+          <a class="" href="/sistema/matriculas.html">Matrículas</a>
+          <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+          <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+          <a class="" href="/sistema/docentes.html">Docentes</a>
+        </nav>
+      </aside>
+      <div class="contenido">
+        <header class="header">
+          <a class="header__user" href="/sistema/perfil.html">
+            Juana Pereira Lopez</a
+          >
+          <a class="header__logout" href="/"
+            >Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </header>
+        <main class="content">
+          <!-- inicio contenido -->
+          <div class="forms__contenedor">
+            <h2 class="titulo-contenido-v">Editar Grado </h2>
+            <form class="forms">
+                <div class="forms__div">
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Grado</label>
+                            <input class="forms__datos--inputs" type="text" name="grado" id="grado" placeholder="Grado" value="Noveno" disabled />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Turno</label>
+                            <select class="forms__datos--selects" name="turno" id="turno" disabled>
+                                <option value="1" selected>Matutino</option>
+                                <option value="2">Vespertino</option>
+                                <option value="3">Sabatino</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button class="forms__btn-azul swt-upd">
+                    <i class="fa-solid fa-pencil"></i>Actualizar Grado
+                </button>
+            </form>
+        </div>
+        
+          <!-- fin contenido -->
+        </main>
+      </div>
+    </div>
+
+    <script src="/src/js/aos.js"></script>
+    <script src="/src/js/swt.js"></script>
+  </body>
+</html>

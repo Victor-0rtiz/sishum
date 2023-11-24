@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    id="favicon"
+    href="../src/img/logo svg.svg"
+    type="image/svg+xml"
+  />
+    <title>SISHUM - Agregar</title>
+
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2624ac34cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="lateral">
+        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">
+        <img
+          class="lateral__image"
+          src="../../src/img/userwoman.png"
+          alt="Imagen de usuario"
+        />
+        <p class="lateral__role">Rol: Administrador</p>
+        <nav class="lateral__nav">
+          <a class="" href="../../sistema.html">Inicio</a>
+          <a class="" href="/sistema/perfil.html">Perfil</a>
+          <a class="" href="/sistema/matriculas.html">Matrículas</a>
+          <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+          <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+          <a class="" href="/sistema/docentes.html">Docentes</a>
+        </nav>
+      </aside>
+      <div class="contenido">
+        <header class="header">
+          <a class="header__user" href="/sistema/perfil.html">
+            Juana Pereira Lopez</a
+          >
+          <a class="header__logout" href="/"
+            >Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </header>
+        <main class="content">
+          <!-- inicio contenido -->
+          <div class="forms__contenedor">
+            <h2 class="titulo-contenido-v">Editar Matrícula</h2>
+            <form class="forms">
+                <h3 class="titulo-contenido-r">Tutor</h3>
+                <div class="forms__div">
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Nombres</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Nombres" value="Juan" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Apellidos</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Apellidos" value="Pérez" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="ocupacion">Situación Laboral</label>
+                            <select class="forms__datos--selects" name="ocupacion" id="ocupacion">
+                                <option value="1">Trabaja</option>
+                                <option value="2">No trabaja</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Teléfono</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Teléfono" value="123456789" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Cédula</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Cédula" value="1234567890" />
+                        </div>
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Correo Electrónico</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Correo Electrónico" value="juan@example.com" />
+                        </div>
+                    </div>
+        
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Celular</label>
+                            <input class="forms__datos--inputs" type="number" name="" id="" placeholder="Celular" value="987654321" />
+                        </div>
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">INSS</label>
+                            <input class="forms__datos--inputs" type="number" name="" id="" placeholder="INSS" value="987654321" />
+                        </div>
+        
+                    </div>
+        
+                </div>
+                <label class="forms__datos--labels" for="">Dirección</label>
+                <textarea class="forms__datos--textarea" name="" id="" cols="30" rows="2">Dirección de Juan Pérez</textarea>
+                <h3 class="titulo-contenido-r">Estudiante</h3>
+                <div class="forms__div">
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Nombres</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Nombres" value="Laura" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Apellidos</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Apellidos" value="Gómez" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="sexo">Sexo</label>
+                            <select class="forms__datos--selects" name="sexo" id="sexo">
+                                <option value="1">Masculino</option>
+                                <option selected value="2">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Teléfono</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Teléfono" value="987654321" />
+                        </div>
+        
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Cod. Estudiante</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Cédula" value="123456789" />
+                        </div>
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Correo Electrónico</label>
+                            <input class="forms__datos--inputs" type="text" name="" id="" placeholder="Correo Electrónico" value="laura@example.com" />
+                        </div>
+                    </div>
+        
+                    <div class="forms__datos">
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Año Lectivo</label>
+                            <select class="forms__datos--selects" name="" id="">
+                                <option value="0">-- Seleccione --</option>
+                                <option selected value="1">2019</option>
+                                <option value="2">2020</option>
+                                <option value="3">2021</option>
+                            </select>
+                        </div>
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Turno</label>
+                            <select class="forms__datos--selects" name="" id="">
+                                <option value="0">-- Seleccione --</option>
+                                <option selected value="1">Matutino</option>
+                                <option value="2">Vespertino</option>
+                                <option value="3">Sabatino</option>
+                            </select>
+                        </div>
+                        <div class="forms__datos--entradas">
+                            <label class="forms__datos--labels" for="">Grado</label>
+                            <select class="forms__datos--selects" name="" id="">
+                                <option value="0">-- Seleccione --</option>
+                                <option selected value="1">3er Grado</option>
+                                <option value="2">4to Grado</option>
+                                <option value="3">5to Grado</option>
+                            </select>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <button class="forms__btn-azul swt-imp">
+                    <i class="fa-solid fa-floppy-disk"></i>Imprimir Reporte
+                </button>
+            </form>
+        </div>
+        
+          <!-- fin contenido -->
+        </main>
+      </div>
+    </div>
+
+    <script src="/src/js/aos.js"></script>
+    <script src="/src/js/swt.js"></script>
+  </body>
+</html>

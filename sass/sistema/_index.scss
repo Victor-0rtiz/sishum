@@ -73,6 +73,10 @@
       margin-top: 1rem;
       @include btn-mod($verde, $blanco);
     }
+    &__btn-azul{
+      margin-top: 1rem;
+      @include btn-mod($azul, $blanco); 
+    }
   }
 
 

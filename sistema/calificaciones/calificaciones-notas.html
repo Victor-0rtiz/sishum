@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    id="favicon"
+    href="../src/img/logo svg.svg"
+    type="image/svg+xml"
+  />
+    <title>SISHUM - Calificaciones</title>
+    
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2624ac34cc.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="lateral">
+        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">
+        <img
+          class="lateral__image"
+          src="../../src/img/userwoman.png"
+          alt="Imagen de usuario"
+        />
+        <p class="lateral__role">Rol: Administrador</p>
+        <nav class="lateral__nav">
+            <a class="" href="../sistema.html">Inicio</a>
+          <a class="" href="/sistema/perfil.html">Perfil</a>
+          <a class="" href="/sistema/matriculas.html">Matrículas</a>
+          <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
+          <a class="" href="/sistema/asignaturas.html">Asignaturas</a>
+          <a class="" href="/sistema/docentes.html">Docentes</a>
+        </nav>
+      </aside>
+      <section class="contenido">
+        <header class="header">
+          <a class="header__user" href="/sistema/perfil.html">
+            Juana Pereira Lopez</a
+          >
+          <a class="header__logout" href="/"
+            >Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </header>
+        <main class="content">
+          <!-- inicio contenido -->
+          <h2 class="titulo-contenido-v">Calificaciones - Notas</h2>
+          <div class="tablas__busqueda">
+            <input
+              type="text"
+              class="tablas__busqueda--input"
+              placeholder="Buscar"
+            />
+            <a
+              href="/sistema/calificaciones/agregar.html"
+              class="tablas__busqueda--agregar"
+            >
+              <i class="fa-solid fa-circle-plus"></i> Agregar Nota
+            </a>
+          </div>
+          <table class="tabsistema__tabla" id="matriculaTable">
+            <thead class="tabsistema__tabla--encabezado">
+                <tr>
+                    <th class="tabsistema__th">ID</th>
+                    <th class="tabsistema__th">Estudiante</th>
+                    <th class="tabsistema__th">Nota</th>
+                    <th class="tabsistema__th">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila 1 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/nota.html">
+                    <td class="tabsistema__td">1</td>
+                    <td class="tabsistema__td">Laura Gómez</td>
+                    <td class="tabsistema__td">88</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="/sistema/calificaciones/nota-editar.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 2 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/nota.html">
+                    <td class="tabsistema__td">2</td>
+                    <td class="tabsistema__td">Juan López</td>
+                    <td class="tabsistema__td">95</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="/sistema/calificaciones/nota-editar.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 3 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/nota.html">
+                    <td class="tabsistema__td">3</td>
+                    <td class="tabsistema__td">Elena Martínez</td>
+                    <td class="tabsistema__td">78</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="/sistema/calificaciones/nota-editar.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 4 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/calificaciones/nota.html">
+                    <td class="tabsistema__td">4</td>
+                    <td class="tabsistema__td">Pedro Ramírez</td>
+                    <td class="tabsistema__td">92</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="/sistema/calificaciones/nota-editar.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Fila 5 -->
+                <tr class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/calificaciones/nota.html">
+                    <td class="tabsistema__td">5</td>
+                    <td class="tabsistema__td">Sofía López</td>
+                    <td class="tabsistema__td">85</td>
+                    <td class="tabsistema__td--acciones">
+                        <a href="/sistema/calificaciones/nota-editar.html" class="tabsistema__td--boton btn-azul">Editar</a>
+                        <button class="tabsistema__td--boton btn-rojo swt-delete">Borrar</button>
+                    </td>
+                </tr>
+        
+                <!-- Puedes continuar agregando más filas según sea necesario -->
+        
+            </tbody>
+        </table>
+        
+        
+        
+          <!-- fin contenido -->
+        </main>
+      </section>
+    </div>
+
+    <script src="/src/js/aos.js"></script>
+    <script src="/src/js/swt.js"></script>
+    <script src="/src/js/tab-dinamic.js"></script>
+    
+  </body>
+</html>

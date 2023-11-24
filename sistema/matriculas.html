@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="icon"
-    id="favicon"
-    href="../src/img/logo svg.svg"
-    type="image/svg+xml"
-  />
+      rel="icon"
+      id="favicon"
+      href="../src/img/logo svg.svg"
+      type="image/svg+xml"
+    />
     <title>SISHUM - Matriculas</title>
-    
+
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,12 +25,11 @@
       src="https://kit.fontawesome.com/2624ac34cc.js"
       crossorigin="anonymous"
     ></script>
-   
   </head>
   <body>
     <div class="wrapper">
       <aside class="lateral">
-        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">
+        <img class="lateral__logo" src="/src/img/logoone3.png" alt="" />
         <img
           class="lateral__image"
           src="../src/img/userwoman.png"
@@ -38,7 +37,7 @@
         />
         <p class="lateral__role">Rol: Administrador</p>
         <nav class="lateral__nav">
-            <a class="" href="../sistema.html">Inicio</a>
+          <a class="" href="../sistema.html">Inicio</a>
           <a class="" href="/sistema/perfil.html">Perfil</a>
           <a class="" href="/sistema/matriculas.html">Matrículas</a>
           <a class="" href="/sistema/calificaciones.html">Calificaciones</a>
@@ -71,7 +70,7 @@
               <i class="fa-solid fa-circle-plus"></i> Agregar Matricula
             </a>
           </div>
-          <table class="tabsistema__tabla">
+          <table class="tabsistema__tabla" id="matriculaTable">
             <thead class="tabsistema__tabla--encabezado">
               <tr>
                 <th class="tabsistema__th">ID</th>
@@ -83,81 +82,120 @@
             </thead>
             <tbody>
               <tr
-                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
+                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/matricula/matricula.html"
               >
                 <td class="tabsistema__td">1</td>
                 <td class="tabsistema__td">Juana Pérez</td>
                 <td class="tabsistema__td">Luis Martínez</td>
                 <td class="tabsistema__td">10º Grado</td>
                 <td class="tabsistema__td--acciones">
-                  <button class="tabsistema__td--boton btn-azul">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
                     Editar
-                  </button>
-                  <button class="tabsistema__td--boton btn-rojo swt-delete" >
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
                     Borrar
                   </button>
                 </td>
               </tr>
               <tr
-                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"
+                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par" data-href="/sistema/matricula/matricula.html"
               >
                 <td class="tabsistema__td">2</td>
-                <td class="tabsistema__td">Carlos Rodríguez</td>
-                <td class="tabsistema__td">Maria Sánchez</td>
+                <td class="tabsistema__td">Laura Rodríguez</td>
+                <td class="tabsistema__td">Carlos Sánchez</td>
                 <td class="tabsistema__td">11º Grado</td>
                 <td class="tabsistema__td--acciones">
-                  <button class="tabsistema__td--boton btn-azul">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
                     Editar
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
+                    Borrar
                   </button>
-                  <button class="tabsistema__td--boton btn-rojo swt-delete" >
+                </td>
+              </tr>
+              <tr
+                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar" data-href="/sistema/matricula/matricula.html"
+              >
+                <td class="tabsistema__td">3</td>
+                <td class="tabsistema__td">Carlos Gómez</td>
+                <td class="tabsistema__td">Ana Rodríguez</td>
+                <td class="tabsistema__td">12º Grado</td>
+                <td class="tabsistema__td--acciones">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
+                    Editar
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
+                    Borrar
+                  </button>
+                </td>
+              </tr>
+             
+
+              <tr
+                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"
+                data-href="/sistema/matricula/matricula.html"
+              >
+                <td class="tabsistema__td">4</td>
+                <td class="tabsistema__td">Ana Gutiérrez</td>
+                <td class="tabsistema__td">José González</td>
+                <td class="tabsistema__td">9º Grado</td>
+                <td class="tabsistema__td--acciones">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
+                    Editar
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
                     Borrar
                   </button>
                 </td>
               </tr>
               <tr
                 class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
+                data-href="/sistema/matricula/matricula.html"
               >
-                <td class="tabsistema__td">2</td>
-                <td class="tabsistema__td">Carlos Rodríguez</td>
-                <td class="tabsistema__td">Maria Sánchez</td>
-                <td class="tabsistema__td">11º Grado</td>
+                <td class="tabsistema__td">5</td>
+                <td class="tabsistema__td">Juan Sánchez</td>
+                <td class="tabsistema__td">María Pérez</td>
+                <td class="tabsistema__td">8º Grado</td>
                 <td class="tabsistema__td--acciones">
-                  <button class="tabsistema__td--boton btn-azul">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
                     Editar
-                  </button>
-                  <button class="tabsistema__td--boton btn-rojo swt-delete" >
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
                     Borrar
                   </button>
                 </td>
               </tr>
               <tr
                 class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"
+                data-href="/sistema/matricula/matricula.html"
               >
-                <td class="tabsistema__td">2</td>
-                <td class="tabsistema__td">Carlos Rodríguez</td>
-                <td class="tabsistema__td">Maria Sánchez</td>
-                <td class="tabsistema__td">11º Grado</td>
+                <td class="tabsistema__td">6</td>
+                <td class="tabsistema__td">María González</td>
+                <td class="tabsistema__td">Juan Rodríguez</td>
+                <td class="tabsistema__td">7º Grado</td>
                 <td class="tabsistema__td--acciones">
-                  <button class="tabsistema__td--boton btn-azul">
+                  <a
+                    href="/sistema/matricula/matricula-editar.html"
+                    class="tabsistema__td--boton btn-azul"
+                  >
                     Editar
-                  </button>
-                  <button class="tabsistema__td--boton btn-rojo swt-delete" >
-                    Borrar
-                  </button>
-                </td>
-              </tr>
-              <tr
-                class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
-              >
-                <td class="tabsistema__td">2</td>
-                <td class="tabsistema__td">Carlos Rodríguez</td>
-                <td class="tabsistema__td">Maria Sánchez</td>
-                <td class="tabsistema__td">11º Grado</td>
-                <td class="tabsistema__td--acciones">
-                  <button class="tabsistema__td--boton btn-azul">
-                    Editar
-                  </button>
-                  <button class="tabsistema__td--boton btn-rojo swt-delete" >
+                  </a>
+                  <button class="tabsistema__td--boton btn-rojo swt-delete">
                     Borrar
                   </button>
                 </td>
@@ -172,6 +210,6 @@
 
     <script src="/src/js/aos.js"></script>
     <script src="/src/js/swt.js"></script>
-    
+    <script src="/src/js/tab-dinamic.js"></script>
   </body>
 </html>

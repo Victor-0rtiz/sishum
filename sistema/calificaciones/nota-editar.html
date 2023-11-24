@@ -29,7 +29,7 @@
   <body>
     <div class="wrapper">
       <aside class="lateral">
-        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">>
+        <img class="lateral__logo" src="/src/img/logoone3.png" alt="">
         <img
           class="lateral__image"
           src="../../src/img/userwoman.png"
@@ -55,33 +55,35 @@
           ></a>
         </header>
         <main class="content">
+          <!-- inicio contenido -->
           <div class="forms__contenedor">
-            <h2 class="titulo-contenido-v">Nota</h2>
+            <h2 class="titulo-contenido-v">Editar Nota</h2>
             <form class="forms">
                 <div class="forms__div">
                     <div class="forms__datos">
                         <div class="forms__datos--entradas">
                             <label class="forms__datos--labels" for="">Estudiante</label>
-                            <input class="forms__datos--inputs" type="text" name="estudiante" id="estudiante" placeholder="Nombre del estudiante" disabled />
+                            <input class="forms__datos--inputs" type="text" name="estudiante" id="estudiante" placeholder="Nombre del estudiante" value="Laura Gómez" disabled />
                         </div>
         
                         <div class="forms__datos--entradas">
                             <label class="forms__datos--labels" for="">Nota</label>
-                            <input class="forms__datos--inputs" type="number" name="nota" id="nota" placeholder="Nota"  disabled />
+                            <input class="forms__datos--inputs" type="number" name="nota" id="nota" placeholder="Nota" value="88" disabled />
                         </div>
                     </div>
                 </div>
-                <button class="forms__btn-verde swt-add">
-                    <i class="fa-solid fa-pencil"></i>Guardar Nota
+                <button class="forms__btn-azul swt-upd">
+                    <i class="fa-solid fa-pencil"></i>Actualizar Nota
                 </button>
             </form>
         </div>
         
+          <!-- fin contenido -->
         </main>
       </div>
     </div>
 
     <script src="/src/js/aos.js"></script>
-    <script src="/src/js/swt.js"></script>
+    <script src="../../src/js/swt.js"></script>
   </body>
 </html>

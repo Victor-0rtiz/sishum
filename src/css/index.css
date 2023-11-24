@@ -1350,6 +1350,21 @@ template {
 .forms__btn-verde:hover {
   background-color: #173317;
 }
+.forms__btn-azul {
+  margin-top: 1rem;
+  background-color: #3d5296;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.9rem;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.forms__btn-azul:hover {
+  background-color: #202a4d;
+}
 
 .tablas__busqueda {
   display: flex;

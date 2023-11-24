@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let botonesEliminar = document.querySelectorAll('.swt-delete');
     let botonesAgregar = document.querySelectorAll('.swt-add');
     let botonesEditar = document.querySelectorAll('.swt-upd');
+    let botonesImprimir = document.querySelectorAll('.swt-imp');
   
     // Agrega un Event Listener para el evento de clic a los botones de eliminar
     botonesEliminar.forEach(function (boton) {
@@ -42,6 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
           icon: 'info',
           title: 'Actualizado',
           text: 'Se ha actualizado Correctamente',
+        });
+      });
+    });
+    botonesImprimir.forEach(function (boton) {
+      boton.addEventListener('click', function(event) {
+        // Evitar el comportamiento predeterminado del botón
+        event.preventDefault();
+        
+        Swal.fire({
+          icon: 'info',
+          title: 'Impreso',
+          text: 'Se ha Impreso Correctamente',
         });
       });
     });
