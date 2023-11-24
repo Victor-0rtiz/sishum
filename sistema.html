@@ -90,7 +90,7 @@
               <a href="/sistema/matricula/agregar.html" class="tabsistema__busqueda--agregar"> <i class="fa-solid fa-circle-plus"></i> Agregar Matrícula </a>
               
             </div>
-            <table class="tabsistema__tabla">
+            <table class="tabsistema__tabla" id="matriculaTable">
               <thead class="tabsistema__tabla--encabezado">
                 <tr>
                   <th class="tabsistema__th">ID</th>
@@ -103,79 +103,80 @@
               <tbody>
                 <tr
                   class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
+                  data-href="/sistema/matricula/matricula.html"
                 >
                   <td class="tabsistema__td">1</td>
                   <td class="tabsistema__td">Juana Pérez</td>
                   <td class="tabsistema__td">Luis Martínez</td>
                   <td class="tabsistema__td">10º Grado</td>
                   <td class="tabsistema__td--acciones">
-                    <button class="tabsistema__td--boton btn-azul">
+                    <a href="/sistema/matricula/matricula-editar.html" class="tabsistema__td--boton btn-azul">
                       Editar
-                    </button>
+                    </a>
                     <button class="tabsistema__td--boton btn-rojo swt-delete" >
                       Borrar
                     </button>
                   </td>
                 </tr>
                 <tr
-                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"
+                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"  data-href="/sistema/matricula/matricula.html"
                 >
                   <td class="tabsistema__td">2</td>
                   <td class="tabsistema__td">Carlos Rodríguez</td>
                   <td class="tabsistema__td">Maria Sánchez</td>
                   <td class="tabsistema__td">11º Grado</td>
                   <td class="tabsistema__td--acciones">
-                    <button class="tabsistema__td--boton btn-azul">
+                    <a href="/sistema/matricula/matricula-editar.html" class="tabsistema__td--boton btn-azul">
                       Editar
-                    </button>
+                    </a>
                     <button class="tabsistema__td--boton btn-rojo swt-delete" >
                       Borrar
                     </button>
                   </td>
                 </tr>
                 <tr
-                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
+                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"  data-href="/sistema/matricula/matricula.html"
                 >
                   <td class="tabsistema__td">2</td>
                   <td class="tabsistema__td">Carlos Rodríguez</td>
                   <td class="tabsistema__td">Maria Sánchez</td>
                   <td class="tabsistema__td">11º Grado</td>
                   <td class="tabsistema__td--acciones">
-                    <button class="tabsistema__td--boton btn-azul">
+                    <a href="/sistema/matricula/matricula-editar.html" class="tabsistema__td--boton btn-azul">
                       Editar
-                    </button>
+                    </a>
                     <button class="tabsistema__td--boton btn-rojo swt-delete" >
                       Borrar
                     </button>
                   </td>
                 </tr>
                 <tr
-                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"
+                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--par"  data-href="/sistema/matricula/matricula.html"
                 >
                   <td class="tabsistema__td">2</td>
                   <td class="tabsistema__td">Carlos Rodríguez</td>
                   <td class="tabsistema__td">Maria Sánchez</td>
                   <td class="tabsistema__td">11º Grado</td>
                   <td class="tabsistema__td--acciones">
-                    <button class="tabsistema__td--boton btn-azul">
+                    <a href="/sistema/matricula/matricula-editar.html" class="tabsistema__td--boton btn-azul">
                       Editar
-                    </button>
+                    </a>
                     <button class="tabsistema__td--boton btn-rojo swt-delete" >
                       Borrar
                     </button>
                   </td>
                 </tr>
                 <tr
-                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"
+                  class="tabsistema__tabla--cuerpo tabsistema__tabla--cuerpo--impar"  data-href="/sistema/matricula/matricula.html"
                 >
                   <td class="tabsistema__td">2</td>
                   <td class="tabsistema__td">Carlos Rodríguez</td>
                   <td class="tabsistema__td">Maria Sánchez</td>
                   <td class="tabsistema__td">11º Grado</td>
                   <td class="tabsistema__td--acciones">
-                    <button class="tabsistema__td--boton btn-azul">
+                    <a href="/sistema/matricula/matricula-editar.html" class="tabsistema__td--boton btn-azul">
                       Editar
-                    </button>
+                    </a>
                     <button class="tabsistema__td--boton btn-rojo swt-delete" >
                       Borrar
                     </button>
@@ -191,5 +192,6 @@
     <script src="/src/js/aos.js"></script>
     <script src="/src/js/estadisticas.js"></script>
     <script src="/src/js/swt.js"></script>
+    <script src="/src/js/tab-dinamic.js"></script>
   </body>
 </html>
